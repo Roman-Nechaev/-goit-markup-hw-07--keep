@@ -24,8 +24,6 @@
   font-size: 0;
 }
 
-
-  
   .header-item { 
     position: relative;
     
@@ -55,33 +53,21 @@
   
   .header-list-nav {
     display: flex;
-    
-  }
 
-  .header-list-nav .current-page {
-    color: var(--accent-color);
+    & .current-page {
+      color: var(--accent-color);
+    }
   }
   
-  
+
   .header-item:not(:last-child) {
     margin-right: 50px;
   }
   
+
   .header-contact-list {
     display: flex;
     margin-left: auto;
-  
-  }
-  
-  .header-mail-link {
-  
-    margin-right: 50px;
-    display: block;
-  
-  }
-  
-  .header-tel-link {
-    display:flex;
   
   }
   
@@ -95,33 +81,23 @@
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
       
+        &:hover,
+        &:focus {
+          color: var(--accent-color);
+        }
   }
+ 
   
-  .header-icon-mail{
+  .header-icon-mail,
+  .header-icon-tell{
     margin-right: 10px;
     
   }
   
-  .header-icon-tell{
-    margin-right: 10px;
-  
-  }
-  
-  
-  
-  .header-link:hover,
-  .header-link:focus {
-    color: var(--accent-color);
-  }
-  .header-mail-link:hover,
-  .header-mail-link:focus {
-    color: var(--accent-color);
-    fill: var(--accent-color);
-  }
-  .header-tel-link:hover,
-  .header-tel-link:focus {
-    color: var(--accent-color);
-    fill: var(--accent-color);
+  .header-mail-link {
+    margin-right: 50px;
+    display: flex;
+    align-items: center
   }
   
   .header-mail-link,
@@ -133,8 +109,16 @@
     color: var(--primary-text-color);
     fill: var(--primary-text-color);
   
+    display:flex;
+
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
+
+        &:hover,
+        &:focus {
+        color: var(--accent-color);
+        fill: var(--accent-color);
+      }
+     
   }
   

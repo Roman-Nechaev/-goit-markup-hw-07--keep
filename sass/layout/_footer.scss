@@ -4,6 +4,21 @@
   background-color: #2f303a;
 }
 
+.footer-logo {
+  margin-bottom: 20px;
+
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+}
+
+.footer-logo-second {
+  color: #ffffff;
+}
+
 .footer-container {
   display: flex;
   align-items: baseline;
@@ -38,12 +53,13 @@
   .footer-item { 
     width: 44px;
     height: 44px;
-  }
-
-  .footer-item + .footer-item {
+    
+    & + .footer-item {
     margin-left: 10px;
   }
+  }
   
+
   .footer-link {
     width: 100%;
     height: 100%;
@@ -56,18 +72,17 @@
     background: rgba(255, 255, 255, 0.1);
 
     transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  
-  .footer-link:hover, 
-  .footer-link:focus {
+    
+    &:hover, 
+   &:focus {
     background-color: #2196F3;
   }
-  
-  .footer-link:hover .footer-icon, 
-  .footer-link:focus .footer-icon{
+    &:hover .footer-icon, 
+    &:focus .footer-icon{
     fill: #ffffff; 
   }
-  
+  }
+
   .footer-full-logo {
     margin-bottom: 20px;
   }
@@ -76,20 +91,6 @@
     fill: #ffffff; 
   }
 
-.footer-logo {
-  margin-bottom: 20px;
-
-  font-family: Raleway, sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: calc(31 / 26);
-  letter-spacing: 0.03em;
-  color: var(--accent-color);
-}
-
-.footer-logo-second {
-  color: #ffffff;
-}
 
 .footer-address {
   margin-bottom: 9px;
@@ -102,14 +103,6 @@
   color: #ffffff;
 }
 
-.footer-mail-link:hover,
-.footer-mail-link:focus {
-  color: var(--accent-color);
-}
-.footer-tel-link:hover,
-.footer-tel-link:focus {
-  color: var(--accent-color);
-}
 
 .footer-mail-link,
 .footer-tel-link {
@@ -121,6 +114,11 @@
   color: rgba(255, 255, 255, 0.6);
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+&:hover,
+&:focus {
+  color: var(--accent-color);
+}
 }
 
 .footer-mail {
@@ -165,17 +163,18 @@
   color: #ffffff;
 
   outline: none;
-}
 
-.mailing-input::placeholder{
-  font-weight: normal;
-  font-size: 16px;
-  line-height: calc(20 / 16);
-
-  display: flex;
+  &::placeholder{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: calc(20 / 16);
   
-  letter-spacing: 0.03em;
+    display: flex;
+    
+    letter-spacing: 0.03em;
+  }
 }
+
 
 .mailing-btn {
   font-weight: 700;
@@ -200,13 +199,13 @@
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-}
 
+  &:hover {
+    cursor: pointer;
+    }
+
+}
 
 .mailing-icon-send {
   margin-left: 10px;
-}
-
-.mailing-btn:hover {
-cursor: pointer;
 }
