@@ -24,9 +24,6 @@
   }
   
   
-  
-
-  
   .modal {
     width: 528px;
     min-height: 581px;
@@ -217,39 +214,38 @@
  
   
   .check-text{
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: calc(24 / 14);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    
+    margin-bottom: 30px;
+    margin-left: 10px;
+    letter-spacing: 0.03em;
+    
+    color: #757575;
+    
+    display: flex;
+    align-items: center;
   
-  margin-bottom: 30px;
-  margin-left: 10px;
-  letter-spacing: 0.03em;
-  
-  color: #757575;
-  
-  display: flex;
-  align-items: center;
-
       span {
-        width: 16px;
-        height: 16px;
-        border: 2px solid #212121;
-        border-radius: 2px;
-        margin-right: 8px;
-      
-        display: flex;
-        align-items: center;
+          width: 16px;
+          height: 16px;
+          border: 2px solid #212121;
+          border-radius: 2px;
+          margin-right: 8px;
         
-        text-transform: uppercase;
-        
-      }
-  }
-  
-  .modal-checkbox:checked + .check-text span { 
-   background-color: var(--accent-color);
-   border-color: var(--accent-color);
-  }
+          display: flex;
+          align-items: center;
+          
+          text-transform: uppercase;
+          
+        }
+     .modal-checkbox:checked + & span { 
+           background-color: var(--accent-color);
+           border-color: var(--accent-color);
+    }
+    }
 
   .link-modal{
     font-style: normal;

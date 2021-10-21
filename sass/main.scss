@@ -6,10 +6,17 @@
 @import './components/btn';
 @import './components/modal';
 @import './components/social-link';
+@import './components/logo';
 @import './layout/header';
 @import './layout/banner';
 @import './layout/studio';
 @import './layout/work';
 @import './layout/team';
 @import './layout/clients';
-@import './layout/footer'
+@import './layout/footer';
+
+// ----- PORTFOLIO ----------
+
+
+@import './layout/gallery';
+@import './components/navigator-btn';
