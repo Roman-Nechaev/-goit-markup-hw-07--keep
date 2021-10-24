@@ -4,11 +4,12 @@
   padding-top: 25px;
   padding-bottom: 25px;
 
- 
+
 }
 
 .header-logo {
   margin-right: 90px;
+  
 }
 
 
@@ -29,17 +30,20 @@
 .header-container {
  display: flex;
  align-items: center;
+ 
  }
   
  
  .header-navigation {
   display: flex;
   align-items: center;
+ 
 }
   
+
 .header-list {
    display: flex;
-
+  
     & .current-page {
        color: var(--accent-color);
     }
