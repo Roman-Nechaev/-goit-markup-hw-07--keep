@@ -7,6 +7,14 @@
     line-height: calc(31 / 26);
     letter-spacing: 0.03em;
     color: var(--accent-color);
+
+      @media screen and (max-width: 767px) {
+      
+        font-size: 24px;
+        line-height: calc(28 / 24);
+      
+      }
+
   }
   
   .logo-second {
@@ -14,7 +22,8 @@
   }
 
   
-  
+ 
+
   
   
  
