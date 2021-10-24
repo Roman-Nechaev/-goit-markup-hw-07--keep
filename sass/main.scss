@@ -1,12 +1,18 @@
 @import './utils/vars';
+@import './utils/hidden';
+
+@import './utils/variables';
+
 @import './base/reset';
 @import './base/common';
-@import './utils/hidden';
+
 @import './components/container';
-@import './components/btn';
+@import './components/banner-btn';
 @import './components/modal';
+@import './components/clients-list';
 @import './components/social-link';
 @import './components/logo';
+
 @import './layout/header';
 @import './layout/banner';
 @import './layout/studio';
@@ -19,4 +25,5 @@
 
 
 @import './layout/gallery';
+
 @import './components/navigator-btn';
