@@ -1,26 +1,39 @@
 .container {
-    // width: 1200px;
+   width: 100%;
+    
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
 
+// дисктоп
+    // width: 1200px;
     // margin-left: auto;
     // margin-right: auto;
     
-    /* outline: 1px solid red; */
-    /* background-color: green; */
-
+//мобил
     @media screen and (min-width: 480px) {
       width: 480px;
     }
 
+//таблетка
     @media screen and (min-width: 768px) {
-      width: 768px;
+      width: 720px;
     }
+
+
+// дисктоп
     @media screen and (min-width: 1200px) {
       width: 1200px;
     }
 
+
+    /* outline: 1px solid red; */
+    /* background-color: green; */
+
+   
+
+    
+    
   }
 
 
