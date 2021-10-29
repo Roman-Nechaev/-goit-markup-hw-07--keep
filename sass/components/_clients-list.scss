@@ -1,12 +1,32 @@
 .clients-list {
+
+
+
+
+
+   // дисктоп
+   @media screen and (min-width: 1200px) {
     display: flex;
     justify-content: center;
+  }
+    
     
     }
   
   .clients-list__item { 
-    width: 170px;
-    height: 92px;
+ // мобил
+ @media screen and (min-width: 480px) {
+  
+  width: 210px;
+  height: 92px;
+}
+
+    // дисктоп
+    @media screen and (min-width: 1200px) {
+      width: 170px;
+      height: 92px;
+    }
+   
     
 
     border: 1px solid #AFB1B8;
@@ -20,10 +40,15 @@
       border: 1px solid #2196f3; 
     }
 
+
+     // дисктоп
+   @media screen and (min-width: 1200px) {
     & + .clients-list__item {
       margin-left: 30px;
     
     }
+  }
+   
   }
 
   .clients-list__link {
