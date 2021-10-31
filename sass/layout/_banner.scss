@@ -55,34 +55,24 @@
       letter-spacing: 0.06em;
       text-transform: uppercase;
       
+      margin-bottom: 30px;
+
       color: #FFFFFF;
     
 
 
-    @media screen and (min-width: 768px) {
-      max-width: 360px;
-      font-weight: 900;
-      font-size: 26px;
-      margin: 0 auto;
-      line-height: calc(42 / 26);
-     
-      text-align: center;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-      
-      color: #FFFFFF;
-     }
-   
 
+   
+   
+// дисктоп
     @media screen and (min-width: 1200px) {
       max-width: 696px;
       font-weight: 900;
       font-size: 44px;
-      margin: 0 auto;
       line-height: calc(60 / 44);
-      text-align: center;
-      text-transform: uppercase;
-      letter-spacing: 0.06em;
+     
+
+    
     }
 
   }

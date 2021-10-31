@@ -3,10 +3,12 @@
 .work {
     padding-bottom: 94px;
 
-    @media screen and (max-width:767px) {
+    @media screen and (min-width: 480px) and (max-width: 1199px)  {
       display: none;
     }
-
+    @media screen and (max-width: 1200px) {
+     
+    }
   }
   
   .work-container__title {
