@@ -12,9 +12,9 @@
 
 .gallery {
   // mobil
-@media screen and (min-width: 480px) {
+ 
   margin-bottom: -30px;
-}
+
   // tablet
   @media screen and (min-width: 768px) {
     display: flex;
@@ -36,9 +36,9 @@
   width: 100%;
 
   // mobil
-  @media screen and (min-width: 480px) {
+  
     margin-bottom: 30px;
-  }
+  
 
   // tablet
   @media screen and (min-width: 768px) {

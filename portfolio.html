@@ -19,21 +19,22 @@
 <body>
 
     <!-- Header -->
-    <!-- <header class="header">
+    <header class="header">
 
         <div class="container">
 
             <div class="header-container">
+                <div class="header-logo">
+                    <a href="./index.html" class="logo link">Web<span class="logo-second">Studio</span></a>
+                </div>
                 <nav class="header-navigation">
-                    <div class="header-logo">
-                    <a href="./index.html" class="logo link">Web<span
-                            class="logo-second">Studio</span></a>
-                        </div>
+                   
 
+            
                     <ul class="header-list list">
                         <li class="header-list__item">
 
-                            <a class="header-list__link link  " href="./index.html">Студия</a>
+                            <a class="header-list__link link" href="./index.html">Студия</a>
                         </li>
 
                         <li class="header-list__item">
@@ -65,10 +66,77 @@
                     </li>
 
                 </ul>
+            
+                
+                    <button type="button" class="mobile-menu-btn js-open-menu" >
+                        <svg width=40 height=40 aria-label="Переключатель мобильного меню">
+                            <use class="icon-menu" href="./images/main/icons/symbol-defs.svg#icon-menu_mobil"></use>
+                        </svg>
+                    </button>
             </div>
 
+            <div class="mob-menu js-menu-container">
+                
+                <div class="mob-menu-content" >
+                    <ul class="mob-menu-list list">
+                        <li class="mob-menu-list__item" >
+                            <a class="mob-menu__link link " href="./index.html" >Студия</a>
+                        </li>
+                        <li class="mob-menu-list__item" >
+                            <a class="mob-menu__link link current-page" href="./portfolio.html" >Портфолио</a>
+                        </li>
+                        <li class="mob-menu-list__item" >
+                            <a class="mob-menu__link link" href="" >Контакты</a>
+                        </li>
+                    </ul>
+
+                </div>
+                    <button type="button" class="mobile-menu-close-btn js-close-menu" >
+                        <svg width=40 height=40 aria-label="Переключатель мобильного меню">
+                            <use class="icon-close" href="./images/main/icons/symbol-defs.svg#icon-close_mobil"></use>
+                        </svg>
+                    </button>
+
+                <div class="mob-menu-contact__bottom">
+
+                   
+                    <ul class="mob-menu-contact__list list"  >
+
+                        <li class="mob-menu__contact-link" >
+                            <a class="mob-contact__tel-link link" href="tel:+380961111111">
+                                +38 096 111 11 11</a>
+
+                        <li class="mob-menu__contact-link" >
+                            <a class="mob-contact__mail-link link" href="mailto:info@devstudio.com"">
+                                info@devstudio.com</a>
+                        </li>
+                    </ul>
+
+                    <ul class="mob-social__list list">
+                        <li class="mob-social__list__item "> 
+                            <a class="mob-social__list-item__link link" href="">Instagram</a>
+                        </li>
+                        <li class="mob-social__list__item "> 
+                            <a class="mob-social__list-item__link link" href="">Twitter</a>
+                        </li>
+                        <li class="mob-social__list__item "> 
+                            <a class="mob-social__list-item__link link" href="">Facebook</a>
+                        </li>
+                        <li class="mob-social__list__item "> 
+                            <a class="mob-social__list-item__link link" href="">LinkedIn</a>
+                        </li>
+
+                    </ul>
+                
+               
+
+                </div>
+
+            </div>
+
+
         </div>
-    </header> -->
+    </header>
 
     <!-- Hiro -->
     <main>
@@ -408,6 +476,13 @@
         </div>
     </footer>
 
+    <script
+    defer
+    src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"
+  ></script>
+  <script defer src="js/mobile-menu.js"></script>
 
 </body>
 

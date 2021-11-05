@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
         integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- <link rel="stylesheet" href="./css/styles.css"> -->
+    
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
@@ -26,11 +26,13 @@
         <div class="container">
 
             <div class="header-container">
+                <div class="header-logo">
+                    <a href="./index.html" class="logo link">Web<span class="logo-second">Studio</span></a>
+                </div>
                 <nav class="header-navigation">
-                    <div class="header-logo">
-                        <a href="./index.html" class="logo link">Web<span class="logo-second">Studio</span></a>
-                    </div>
+                   
 
+            
                     <ul class="header-list list">
                         <li class="header-list__item">
 
@@ -66,17 +68,17 @@
                     </li>
 
                 </ul>
-
-
-                    <button type="button" class="mobile-menu-btn is-open" js-menu-container>
+            
+                
+                    <button type="button" class="mobile-menu-btn js-open-menu" >
                         <svg width=40 height=40 aria-label="Переключатель мобильного меню">
                             <use class="icon-menu" href="./images/main/icons/symbol-defs.svg#icon-menu_mobil"></use>
-                            <use class="icon-close" href="./images/main/icons/symbol-defs.svg#icon-close_mobil"></use>
                         </svg>
                     </button>
             </div>
 
-            <div class="mob-menu">
+            <div class="mob-menu js-menu-container">
+                
                 <div class="mob-menu-content" >
                     <ul class="mob-menu-list list">
                         <li class="mob-menu-list__item" >
@@ -90,7 +92,14 @@
                         </li>
                     </ul>
 
-                    <div class="mob-menu-contact__bottom">
+                </div>
+                    <button type="button" class="mobile-menu-close-btn js-close-menu" >
+                        <svg width=40 height=40 aria-label="Переключатель мобильного меню">
+                            <use class="icon-close" href="./images/main/icons/symbol-defs.svg#icon-close_mobil"></use>
+                        </svg>
+                    </button>
+
+                <div class="mob-menu-contact__bottom">
 
                    
                     <ul class="mob-menu-contact__list list"  >
@@ -120,12 +129,13 @@
                         </li>
 
                     </ul>
-                </div>
-
+                
+               
 
                 </div>
 
             </div>
+
 
         </div>
     </header>
@@ -695,8 +705,16 @@
 
     </div>
 
-    <script src="./js/mobile-menu.js"></script>
+    
     <script src="./js/modal.js"></script>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
 </body>
 
 </html>
