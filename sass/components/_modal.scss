@@ -1,7 +1,7 @@
   .backdrop {
     // дисктоп
-    @media screen and (min-width: 1200px) {
-    }
+    // @media screen and (min-width: 1200px) {
+    // }
     position: fixed;
     width: 100vw;
     height: 100vh;
@@ -27,15 +27,23 @@
   }
 
   .modal {
-    //мобил
-    @media screen and (min-width: 480px) {
-      width: 450px;
-      min-height: 609px;
+  
+    width: 100%;
+    min-height: 609px;
+      
       padding: 40px;
-    }
-
-    //таблетка
+    
+     
+  //мобил
+  @media screen and (min-width: 480) {
+    width: 450px;
+    min-height: 609px;
+    
+  }
+    
+  //таблетка
     @media screen and (min-width: 768px) {
+      
     }
 
     // дисктоп
@@ -66,7 +74,6 @@
 
   .modal-title {
     //мобил
-    @media screen and (min-width: 480px) {
       font-weight: 700;
       font-size: 20px;
       line-height: calc(30 / 20);
@@ -76,7 +83,7 @@
       margin-bottom: 12px;
 
       color: var(--primary-title-color);
-    }
+    
 
     //таблетка
     @media screen and (min-width: 768px) {
@@ -122,10 +129,15 @@
 
   .modal-imput {
     //мобил
+    width: 370px;
+    height: 40px;
     @media screen and (min-width: 480px) {
-      width: 370px;
-      height: 40px;
+
+      // width: 370px;
+      
     }
+     
+    
 
     // дисктоп
     @media screen and (min-width: 1200px) {
@@ -238,11 +250,10 @@
 
   .check-text {
     //мобил
-    @media screen and (min-width: 480px) {
-      font-size: 12px;
+    font-size: 12px;
       line-height: calc(14 / 12);
       // letter-spacing: 0.03em;
-    }
+    
 
     // дисктоп
     @media screen and (min-width: 1200px) {
@@ -278,11 +289,10 @@
 
   .link-modal {
     //мобил
-    @media screen and (min-width: 480px) {
-      font-size: 12px;
-      line-height: calc(14 / 12);
-      letter-spacing: 0.03em;
-    }
+    font-size: 12px;
+    line-height: calc(14 / 12);
+    letter-spacing: 0.03em;
+   
 
     // дисктоп
     @media screen and (min-width: 1200px) {

@@ -1,8 +1,7 @@
   .btn {
     // mobil
-    @media screen and (min-width: 480px) {
-      margin-top: 15px;
-    }
+    margin-top: 15px;
+
     // tablet
     @media screen and (min-width: 768px) {
       margin-top: 0px;
@@ -36,11 +35,10 @@
 
   .navigator-button {
     // мобил
-    @media screen and (min-width: 480px) {
-      display: flex;
+    display: flex;
       flex-wrap: wrap;
       margin-bottom: 40px;
-    }
+   
 
     //таблетка
     @media screen and (min-width: 768px) {

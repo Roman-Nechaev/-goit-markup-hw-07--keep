@@ -28,9 +28,8 @@
             <div class="header-container">
                 <nav class="header-navigation">
                     <div class="header-logo">
-                    <a href="./index.html" class="logo link">Web<span
-                            class="logo-second">Studio</span></a>
-                        </div>
+                        <a href="./index.html" class="logo link">Web<span class="logo-second">Studio</span></a>
+                    </div>
 
                     <ul class="header-list list">
                         <li class="header-list__item">
@@ -67,6 +66,65 @@
                     </li>
 
                 </ul>
+
+
+                    <button type="button" class="mobile-menu-btn is-open" js-menu-container>
+                        <svg width=40 height=40 aria-label="Переключатель мобильного меню">
+                            <use class="icon-menu" href="./images/main/icons/symbol-defs.svg#icon-menu_mobil"></use>
+                            <use class="icon-close" href="./images/main/icons/symbol-defs.svg#icon-close_mobil"></use>
+                        </svg>
+                    </button>
+            </div>
+
+            <div class="mob-menu">
+                <div class="mob-menu-content" >
+                    <ul class="mob-menu-list list">
+                        <li class="mob-menu-list__item" >
+                            <a class="mob-menu__link link current-page" href="./index.html" >Студия</a>
+                        </li>
+                        <li class="mob-menu-list__item" >
+                            <a class="mob-menu__link link" href="./portfolio.html" >Портфолио</a>
+                        </li>
+                        <li class="mob-menu-list__item" >
+                            <a class="mob-menu__link link" href="" >Контакты</a>
+                        </li>
+                    </ul>
+
+                    <div class="mob-menu-contact__bottom">
+
+                   
+                    <ul class="mob-menu-contact__list list"  >
+
+                        <li class="mob-menu__contact-link" >
+                            <a class="mob-contact__tel-link link" href="tel:+380961111111">
+                                +38 096 111 11 11</a>
+
+                        <li class="mob-menu__contact-link" >
+                            <a class="mob-contact__mail-link link" href="mailto:info@devstudio.com"">
+                                info@devstudio.com</a>
+                        </li>
+                    </ul>
+
+                    <ul class="mob-social__list list">
+                        <li class="mob-social__list__item "> 
+                            <a class="mob-social__list-item__link link" href="">Instagram</a>
+                        </li>
+                        <li class="mob-social__list__item "> 
+                            <a class="mob-social__list-item__link link" href="">Twitter</a>
+                        </li>
+                        <li class="mob-social__list__item "> 
+                            <a class="mob-social__list-item__link link" href="">Facebook</a>
+                        </li>
+                        <li class="mob-social__list__item "> 
+                            <a class="mob-social__list-item__link link" href="">LinkedIn</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+
+                </div>
+
             </div>
 
         </div>
@@ -196,9 +254,22 @@
 
                 <ul class="team-list list">
                     <li class="team-list__item">
-                        <img src="./images//main/team-card-1.jpeg" alt="Игорь Демьяненко, Product Designer" width="270"
-                            height="260">
-                            
+
+                        <picture>
+                            <source media="(min-width:1200px )"
+                                srcset="./images/main/team-card/team-card-1.jpeg 1x, ./images/main/team-card/team-card-1-2x.jpeg 2x">
+
+                                <source media="(min-width:768px )"
+                                srcset="./images/main/team-card/team-card-1-tab.jpeg 1x, ./images/main/team-card/team-card-1-tab-2x.jpeg 2x">
+
+                                <source media="(min-width:480px )"
+                                srcset="./images/main/team-card/team-card-1-mob.jpeg 1x, ./images/main/team-card/team-card-1-mob-2x.jpeg 2x">
+
+                            <img src="./images//main/team-card/team-card-1.jpeg"
+                                alt="Игорь Демьяненко, Product Designer" width="270" height="260">
+                        </picture>
+
+
                         <div class="team-list__bottom">
                             <h3 class="team-list__title">Игорь Демьяненко </h3>
                             <p class="team-list__text">Product Designer</p>
@@ -240,14 +311,27 @@
                     </li>
 
                     <li class="team-list__item">
-                        <img src="./images//main/team-card-2.jpeg" alt="Ольга Репина, Frontend Developer" width="270"
-                            height="260">
+
+                        <picture>
+                            <source media="(min-width:1200px )"
+                            srcset="./images/main/team-card/team-card-2.jpeg 1x, ./images/main/team-card/team-card-2-2x.jpeg 2x">
+
+                            <source media="(min-width:768px )"
+                            srcset="./images/main/team-card/team-card-2-tab.jpeg 1x, ./images/main/team-card/team-card-2-tab-2x.jpeg 2x">
+
+                            <source media="(min-width:480px )"
+                            srcset="./images/main/team-card/team-card-2-mob.jpeg 1x, ./images/main/team-card/team-card-2-mob-2x.jpeg 2x">
+
+                            <img src="./images/main/team-card/team-card-2.jpeg" alt="Ольга Репина, Frontend Developer"
+                                width="270" height="260">
+                        </picture>
+
                         <div class="team-list__bottom">
                             <h3 class="team-list__title">Ольга Репина</h3>
                             <p class="team-list__text">Frontend Developer</p>
 
                             <ul class="master-item-list social-list list">
-                              
+
                                 <li class="social-list__item">
                                     <a href="" class="social-list__link link">
                                         <svg class="social-list__icon" width=20 height=20>
@@ -280,8 +364,20 @@
                         </div>
                     </li>
                     <li class="team-list__item">
-                        <img src="./images/main/team-card-3.jpeg" alt="Николай Тарасов, Marketing" width="270"
-                            height="260">
+                        <picture>
+                            <source media="(min-width:1200px )"
+                            srcset="./images/main/team-card/team-card-3.jpeg 1x, ./images/main/team-card/team-card-3-2x.jpeg 2x">
+
+                            <source media="(min-width:768px )"
+                            srcset="./images/main/team-card/team-card-3-tab.jpeg 1x, ./images/main/team-card/team-card-3-tab-2x.jpeg 2x">
+
+                            <source media="(min-width:480px )"
+                            srcset="./images/main/team-card/team-card-3-mob.jpeg 1x, ./images/main/team-card/team-card-3-mob-2x.jpeg 2x">
+
+                            <img src="./images/main/team-card/team-card-3.jpeg" alt="Николай Тарасов, Marketing"
+                                width="270" height="260">
+                        </picture>
+
                         <div class="team-list__bottom">
                             <h3 class="team-list__title">Николай Тарасов</h3>
                             <p class="team-list__text">Marketing</p>
@@ -320,8 +416,22 @@
                         </div>
                     </li>
                     <li class="team-list__item">
-                        <img src="./images//main/team-card-4.jpeg" alt="Михаил Ермаков, UI Designer" width="270"
-                            height="260">
+
+                        <picture>
+                            <source media="(min-width:1200px )"
+                            srcset="./images/main/team-card/team-card-4.jpeg 1x, ./images//main/team-card/team-card-4-2x.jpeg 2x">
+
+                            <source media="(min-width:768px )"
+                            srcset="./images/main/team-card/team-card-4-tab.jpeg 1x, ./images/main/team-card/team-card-4-tab-2x.jpeg 2x">
+
+                            <source media="(min-width:480px )"
+                            srcset="./images/main/team-card/team-card-4-mob.jpeg 1x, ./images/main/team-card/team-card-4-mob-2x.jpeg 2x">
+
+                            <img src="./images//main/team-card/team-card-4.jpeg" alt="Михаил Ермаков, UI Designer"
+                                width="270" height="260">
+
+                        </picture>
+
                         <div class="team-list__bottom">
                             <h3 class="team-list__title">Михаил Ермаков</h3>
                             <p class="team-list__text">UI Designer</p>
@@ -365,9 +475,9 @@
         </section>
 
         <!-- Regular clients -->
-     
+
         <section class="clients">
-            <div class="container">
+            <div class="container clients-container">
                 <h2 class="clients-title">Постоянные клиенты</h2>
 
                 <ul class="clients-list list">
@@ -417,7 +527,7 @@
 
             </div>
         </section>
-        
+
     </main>
 
     <!-- Footer -->
@@ -427,8 +537,7 @@
 
             <div class="footer-info">
                 <div class="footer-logo">
-                    <a href="./index.html" class="logo link">Web<span
-                            class="footer-logo-second">Studio</span></a>
+                    <a href="./index.html" class="logo link">Web<span class="footer-logo-second">Studio</span></a>
                 </div>
 
                 <address class="footer-address">
@@ -483,7 +592,7 @@
                 </ul>
             </div>
 
-            
+
             <div class="mailing-wrap ">
 
                 <h2 class="mailing-title">Подпишитесь на рассылку</h2>
@@ -499,18 +608,18 @@
                             <use href="./images/main/icons/symbol-defs.svg#icon-send"></use>
                         </svg>
                     </button>
-               
-
-                </div>
-
-           
-                </form>
 
 
-            
+            </div>
+
+
+            </form>
+
+
+
         </div>
     </footer>
-                <!-- modal -->
+    <!-- modal -->
 
     <div class="backdrop is-hidden" data-modal>
 
@@ -561,16 +670,16 @@
                 </div>
 
                 <div class="modal-checkbox-box">
-                <input type="checkbox" id="modal-checkbox" class="modal-checkbox visually-hidden">
-                <label for="modal-checkbox" class="check-text">
-                    <span class="icon-check-box">
-                        <svg class="icon-check" width=16 height=16>
-                            <use href="./images/main/icons/symbol-defs.svg#icon-madal-check"></use>
-                        </svg>
-                    </span>Соглашаюсь с рассылкой и принимаю &#160;<a href="" class="link-modal">Условия
-                        договора</a></label>
-                    </div>
-                    
+                    <input type="checkbox" id="modal-checkbox" class="modal-checkbox visually-hidden">
+                    <label for="modal-checkbox" class="check-text">
+                        <span class="icon-check-box">
+                            <svg class="icon-check" width=16 height=16>
+                                <use href="./images/main/icons/symbol-defs.svg#icon-madal-check"></use>
+                            </svg>
+                        </span>Соглашаюсь с рассылкой и принимаю &#160;<a href="" class="link-modal">Условия
+                            договора</a></label>
+                </div>
+
                 <button type="submit" class="modal-button">Отправить</button>
             </form>
 
@@ -586,6 +695,7 @@
 
     </div>
 
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
 </body>
 
